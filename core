@@ -17,10 +17,8 @@ install() {
 
   #
   case $platform in
-  darwin)
-    ;;
+  darwin);;
   linux) ;;
-
   *)
     log::error "[$(timestamp)] unsupport platform: $platform"
     return 1
@@ -29,10 +27,7 @@ install() {
 
   case $arch in
   arm64) ;;
-
-  amd64)
-    arch="x86_64"
-    ;;
+  amd64) ;;
   *)
     log::error "[$(timestamp)] unsupport arch: $arch"
     return 1
